@@ -94,6 +94,71 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+
+}
+
+.main {
+  padding: 2em;
+}
+
+/* Header */
+
+.page-header {
+    background-image: url("../img/purple-bg.jpeg");
+    width: 100%;
+    height: 30em;
+    display: block;
+    position: relative;
+}
+
+.page-header h1 {
+  color: white;
+  font-size: 3em;
+}
+
+.pg-copy {
+  position: absolute;
+  top: 5em;
+  left: 5em;
+}
+
+.btn {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+}
+
+/* Navigation */
+
+.main-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: #fff;
+    background-color: #000;
+    width: 100%;
+}
+
+.nav-header {
+    color: white;
+    padding: 1em;
+    display: block;
+}
+
+.menu {
+  position: right;
+  display: block;
+  font-family: 'fontawesome';
+}
+
+/* grid */
 
 .grid {
     content: "";
@@ -104,9 +169,31 @@ textarea {
 .image {
     width: 50%;
     float: left;
+    border: 2px solid white;
+    position: relative;
 }
 
+.image img {
+  width: 100%;
+  overflow: hidden;
+  color: white;
+}
 
+.grid h3 {
+  color: white;
+  font-size: 200% auto;
+  text-align: center;
+  position: absolute;
+  bottom: center;
+}
+
+/* footer */
+
+.page-footer {
+  text-align: center;
+  border: 1px solid #cccccc;
+  padding: .25em;
+}
 
 
 
