@@ -101,7 +101,7 @@ textarea {
 }
 
 body {
-
+  margin-top: 3em;
 }
 
 .main {
@@ -150,27 +150,36 @@ body {
 
 /* Navigation */
 
-.main-nav {
+nav {
     position: fixed;
     top: 0;
     left: 0;
     color: #fff;
     background-color: #000;
     width: 100%;
+    z-index: 2;
 }
 
 .nav-header {
+    float: left;
     color: white;
     padding: 0;
     display: block;
+    padding: 0 1.5em;
 }
 
 .menu {
-  position: right;
+  float: right;
   display: block;
   font-family: 'fontawesome';
+  padding: 2em, 2em;
 }
 
+.menu img {
+ position: relative;
+ top: 1em;
+ right: 2em;
+}
 /* grid */
 
 .grid {
@@ -184,14 +193,17 @@ body {
     float: left;
     border: 2px solid white;
     position: relative;
-    overlay: hsla(154, 0%, 100%, 0.5);
-    z-index: 1;
 }
 
 .image img {
   width: 100%;
   overflow: hidden;
-  z-index: -2;
+}
+
+.image caption{
+  width: 50%;
+  height: 50%;
+  background-color: hsla(154, 0%, 100%, 0.5);
 }
 
 .grid h3 {
