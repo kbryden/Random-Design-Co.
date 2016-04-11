@@ -106,6 +106,11 @@ body {
 
 .main {
   padding: 2em;
+  border: 1px solid #cccccc;
+}
+
+.about {
+  border-bottom: 1px solid #cccccc;
 }
 
 /* Header */
@@ -120,19 +125,27 @@ body {
 
 .page-header h1 {
   color: white;
-  font-size: 3em;
+  font-size: 4em;
 }
 
 .pg-copy {
   position: absolute;
-  top: 5em;
-  left: 5em;
+  text-align: center;
+  top: 20%;
+  left: 25%;
+  right: 25%;
 }
 
 .btn {
   background-color: transparent;
   color: white;
-  border: 1px solid white;
+  border: 1.5px solid white;
+  padding: .75em 1.5em;
+}
+
+.btn:hover {
+  background-color: white;
+  color: black;
 }
 
 /* Navigation */
@@ -148,7 +161,7 @@ body {
 
 .nav-header {
     color: white;
-    padding: 1em;
+    padding: 0;
     display: block;
 }
 
@@ -171,20 +184,26 @@ body {
     float: left;
     border: 2px solid white;
     position: relative;
+    overlay: hsla(154, 0%, 100%, 0.5);
+    z-index: 1;
 }
 
 .image img {
   width: 100%;
   overflow: hidden;
-  color: white;
+  z-index: -2;
 }
 
 .grid h3 {
-  color: white;
   font-size: 200% auto;
   text-align: center;
   position: absolute;
-  bottom: center;
+  top: 40%;
+  bottom: 40%;
+  right: 25%;
+  left: 25%;
+  margin: 0;
+  overflow: hidden;
 }
 
 /* footer */
